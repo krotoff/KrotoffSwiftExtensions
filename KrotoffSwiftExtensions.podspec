@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KrotoffSwiftExtensions'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'My Swift Extensions. UI, Foundation, CoreData and etc.'
  
   s.description      = 'Simple extensions for every day usage in your code. Make your code cleaner.'
@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/krotoff/KrotoffSwiftExtensions.git', :branch => 'master', :tag => s.version.to_s }
  
   s.ios.deployment_target = '11.0'
-  s.source_files = '*'
+  s.source_files = 'KrotoffSwiftExtensions/**/*.swift'
+  s.exclude_files = 'KrotoffSwiftExtensions/*.plist'
  
 end
